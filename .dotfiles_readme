@@ -1,6 +1,0 @@
-To import dotfiles from github run this:
-
-alias config='/usr/bin/git --git-dir=$DOTFILES --work-tree=$HOME'
-
-config checkout
-
