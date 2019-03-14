@@ -1,0 +1,10 @@
+;==========================================================
+; MODULE: WLAN
+;==========================================================
+
+type = custom/script
+exec = iwgetid -r
+interval = 1
+format-prefix = " "
+format-underline = #72A1B2
+
