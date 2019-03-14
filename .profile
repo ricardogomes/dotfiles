@@ -11,7 +11,7 @@
 
 echo "Sourcing .profile"
 
-export PATH=$PATH:$HOME/spells:/usr/bin/:/usr/local/bin
+export PATH=$PATH:$HOME/spells
 
 export EDITOR="nvim"
 export TERMINAL="st"
@@ -21,6 +21,11 @@ export FILE="ranger"
 
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CONFIG_DIRS=$XDG_CONFIG_HOME:$HOME
+
+export DATA=/data
+export DEVELOPMENT=/data/development
+export DOTFILES=$DEVELOPMENT/github/dotfiles
+
 
 # less/man colors
 export LESS=-R

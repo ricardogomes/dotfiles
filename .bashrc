@@ -1,61 +1,58 @@
 #!/bin/bash
+###
+# .basrc
+#
+# Runs for every interactive shell (login or not do to being sourced in .bash_profile)
+# 
+# Purpose: define BASH related running configurations
+# Notes:
+#	- some elements where extracted to other files under .config/shell
+###
+
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+echo "Sourcing .bashrc"
+
+###
+# BASH CONFIGURATIONS
+###
+
+HISTCONTROL=ignoredups		# Ignore sequential duplicates
+HISTSIZE= HISTFILESIZE= 	# Infinite history.
+shopt -s histappend		# Append instead of replacing
+shopt -s checkwinsize		# Check window size and redefine lines and columns if necessary
+shopt -s autocd 		#Allows you to cd into directory merely by typing the directory name.
+
+# Needs review
 stty -ixon # Disable ctrl-s and ctrl-q.
-shopt -s autocd #Allows you to cd into directory merely by typing the directory name.
-HISTSIZE= HISTFILESIZE= # Infinite history.
 export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 
-# System Maintainence
-alias sdn="sudo shutdown now"
-alias sudo="sudo "
 
-# Some aliases
-alias c="clear"
-alias e="$EDITOR"
-alias p="sudo pacman"
-alias SS="sudo systemctl"
-alias v="$EDITOR"
-alias r="ranger"
-alias sr="sudo ranger"
-alias ka="killall"
-alias g="git"
-alias mkd="mkdir -pv"
-
-# Adding color
-alias ls='ls -lhN --color=auto --group-directories-first'
-alias la='ls -lhaN --color=auto --group-directories-first'
-alias grep="grep --color=auto"
-alias diff="diff --color=auto"
-alias ccat="highlight --out-format=ansi" # Color cat - print file with syntax highlighting.
-
-
-export DEV=/data/development
-export DOTFILES=$DEV/github/dotfiles
-
-alias config='/usr/bin/git --git-dir=$DOTFILES --work-tree=$HOME'
+if [[ -d /usr/share/bash_completion/completions ]]; then
+	for file in /usr/share/bash_completion/completions/* ; do
+		# shellcheck source=/dev/null
+		source "$file"
+	done
+fi
+unset file
 
 
 
-# VOIDRICE NOT USED DEFINITIONS
-#[ -f "$HOME/.shortcuts" ] && source "$HOME/.shortcuts" # Load shortcut aliases
 
-#alias mw="~/.config/mutt/mutt-wizard.sh"
-#alias psref="gpg-connect-agent RELOADAGENT /bye" # Refresh gpg
-#alias gua="git remote | xargs -L1 git push --all"
-#alias f="vifm"
-#alias trem="transmission-remote"
-#alias ref="shortcuts >/dev/null ; source ~/.bashrc" # Refresh shortcuts manually and reload bashrc
-#alias mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)"
-#alias x="sxiv -ft *"
-#alias lsp="pacman -Qett --color=always | less"
-# Internet
-#alias yt="youtube-dl --add-metadata -i" # Download video link
-#alias yta="yt -x -f bestaudio/best" # Download only audio
-#alias YT="youtube-viewer"
-#shdl() { curl -O $(curl -s http://sci-hub.tw/"$@" | grep location.href | grep -o http.*pdf) ;}
-#se() { du -a ~/.scripts/* ~/.config/* | awk '{print $2}' | fzf | xargs  -r $EDITOR ;}
-#sv() { vcopy "$(du -a ~/.scripts/* ~/.config/* | awk '{print $2}' | fzf)" ;}
-#vf() { fzf | xargs -r -I % $EDITOR % ;}
+###
+# ALIASES
+###
+
+source $XDG_CONFIG_HOME/shell/aliases
+source $XDG_CONFIG_HOME/shell/arch_aliases
+source $XDG_CONFIG_HOME/shell/i3_aliases
+
+# FUNCTIONS
+
+test_function() { echo "running function with arguments $@" ;}
+
+
+
+
