@@ -1,0 +1,6 @@
+###
+# I3 Aliases
+###
+
+# Lock the screen (when going AFK)
+alias afk="i3lock -c 000000"

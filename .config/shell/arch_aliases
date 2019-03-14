@@ -1,0 +1,9 @@
+###
+# arch_aliases: Arch specific aliases
+###
+
+
+# SYSTEM MAINTENANCE
+
+alias p="sudo pacman"
+
