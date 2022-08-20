@@ -1,8 +1,0 @@
-;==========================================================
-; MODULE: Brightness
-;==========================================================
-type= custom/script
-exec = $HOME/.config/polybar/scripts/getbrightness
-interval = 0.1
-format-underline = #72A1B2
-

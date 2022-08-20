@@ -1,9 +1,0 @@
-;==========================================================
-; MODULE: Volume
-;==========================================================
-
-type = custom/script
-exec = $HOME/.config/polybar/scripts/getvolume
-interval = 0.1
-format-underline = #72A1B2
-
