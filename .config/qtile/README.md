@@ -86,6 +86,7 @@ This configuration of Qtile as a few objectives / requirements:
 
 - [ ] Clear logger used for learning / debugging 
 - [ ] Improve autostart.sh by supporting other environments besides Home
+- [ ] Improve statusbar
 
 ## Change log
 
