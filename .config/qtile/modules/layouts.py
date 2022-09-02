@@ -12,8 +12,8 @@ from modules.themes.current import palette
 
 default_border = dict(
     border_focus=palette[10],
-    border_normal=palette[3],
-    border_width=4,
+    border_normal=palette[11],
+    border_width=2,
 )
 
 layouts = [

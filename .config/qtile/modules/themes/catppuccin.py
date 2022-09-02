@@ -10,6 +10,7 @@ catppuccin = [
     "#c9cbff",  # Colour 8
     "#b5e8e0",  # Colour 9
     "#b1e1a6",  # Colour 10
+    "#24273A",  # Colour 11
 ]
 
 
