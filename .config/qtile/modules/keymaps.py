@@ -61,6 +61,7 @@ toggles = [
     EzKey("M-l", lazy.next_layout()),
     EzKey("M-f", lazy.window.toggle_fullscreen()),
     EzKey("M-t", lazy.window.toggle_floating()),
+    EzKey('M-C-b', lazy.hide_show_bar('top'))
 ]
 
 qtile_controls = [

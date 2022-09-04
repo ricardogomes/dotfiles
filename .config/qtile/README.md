@@ -58,6 +58,7 @@ This configuration of Qtile as a few objectives / requirements:
 | Mod l | Change to the next layout (Max or MonadTall) | |
 | Mod f | Toggle Fullscreen on the current app | | 
 | Mod t | Toggle Floating on the current app | |
+| Mod Ctrl b | Toggle bar on the current app scree | |
 | | |
 | Mod Shift r | Restart Qtile | |
 | | | 
@@ -91,4 +92,4 @@ This configuration of Qtile as a few objectives / requirements:
 ## Change log
 
 - **2022-08-20 [v0.21.0]** started the documentation
-
+- **2022-08-20 [v0.21.0]** added keymap to toggle bar
