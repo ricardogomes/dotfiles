@@ -98,7 +98,7 @@ for i in range(10):
     group_keys.extend(
         [
             EzKey("M-%s" % i, lazy.group[str(i)].toscreen()),
-            EzKey("M-S-%s" % i, lazy.window.togroup(i)),
+            EzKey("M-S-%s" % i, lazy.window.togroup(str(i))),
         ]
     )
 
