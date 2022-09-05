@@ -19,6 +19,7 @@ Currently implemented [Qtile](https://github.com/qtile/qtile) [config](.config/q
 ### Language Support
 
 - [PHPBrew](https://github.com/phpbrew/phpbrew): tool to manage [PHP](https://www.php.net/) versions and extensions [config](.config/phpbrew)
+- [Composer](https://getcomposer.org): package manager for [PHP](https://www.php.net) - version 2.4.1 2022-08-20 11:44:50
 
 ### Changelog
 
