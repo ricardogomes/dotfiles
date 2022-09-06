@@ -32,13 +32,15 @@ Currently using the nightly version of Neovim
       - [ ] review extensions and configs
     - [x] treesitter
       - [ ] review extensions and configs
+      - [x] set fold method
     - [ ] lsp
       - setup language support
         - [x] lua
-        - [ ] php
+        - [x] php
         - [ ] javascript (vue)
         - [ ] go 
         - [ ] html (hugo)
+    - [ ] cmp
     - [ ] null-ls
     - [ ] status bar
     - [ ] buffer line 
@@ -47,5 +49,9 @@ Currently using the nightly version of Neovim
 
 
 ## Changelog
-- [2022-08-29] [v0.8.0-dev-885-ga5ed89c97] started this configuration; added basic core configs
-- [2022-09-01] [v0.8.0-dev-1008-g12fe197cf] added initial plugin set for the basic funcionality
+
+  - **2022-09-06 [v0.8.0-dev-1008-g12fe197cf]** added treesitter modules (folding, auto-pairs) 
+  - **2022-09-05 [v0.8.0-dev-1008-g12fe197cf]** added PHP LSP support
+  - **2022-09-01 [v0.8.0-dev-1008-g12fe197cf]** added initial plugin set for the basic funcionality
+  - **2022-08-29 [v0.8.0-dev-885-ga5ed89c97]** started this configuration; added basic core configs
+
