@@ -24,7 +24,13 @@ layouts = [
         single_border_width = 0,
         single_margin       = 4
     ),
-    layout.Max(
+    layout.MonadWide(
+        **default_border,
+        ratio               = 0.7,
+        margin              = 10,
+        single_border_width = 0,
+        single_margin       = 4
+    ),layout.Max(
         **default_border,
         margin              = 4
     ),

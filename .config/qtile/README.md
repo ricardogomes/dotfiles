@@ -91,6 +91,7 @@ This configuration of Qtile as a few objectives / requirements:
 
 ## Change log
 
+- **2022-09-06 [v0.21.0]** activated MonadWide layout
+- **2022-09-05 [v0.21.0]** fixed issue with moving windows to groups
 - **2022-08-20 [v0.21.0]** started the documentation
 - **2022-08-20 [v0.21.0]** added keymap to toggle bar
-- **2022-09-05 [v0.21.0]** fixed issue with moving windows to groups
