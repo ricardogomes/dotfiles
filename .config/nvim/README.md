@@ -40,17 +40,21 @@ Currently using the nightly version of Neovim
         - [ ] javascript (vue)
         - [ ] go 
         - [ ] html (hugo)
-    - [ ] cmp
+    - [x] cmp
     - [ ] null-ls
-    - [ ] status bar
-    - [ ] buffer line 
+    - [x] status bar
+      - [x] lualine
+    - [x] buffer line 
+      - [x] bufferline
+    - [x] file explorer
+      - [x] nvim-tree
 	- [ ] define quality of life plugins
 	- [ ] define set of plugins for specific development environments
 
 
 ## Changelog
 
-  - **2022-09-06 [v0.8.0-dev-1008-g12fe197cf]** added treesitter modules (folding, auto-pairs) 
+  - **2022-09-06 [v0.8.0-dev-1008-g12fe197cf]** added treesitter modules (folding, auto-pairs), lualine, bufferline and nvim-tree 
   - **2022-09-05 [v0.8.0-dev-1008-g12fe197cf]** added PHP LSP support
   - **2022-09-01 [v0.8.0-dev-1008-g12fe197cf]** added initial plugin set for the basic funcionality
   - **2022-08-29 [v0.8.0-dev-885-ga5ed89c97]** started this configuration; added basic core configs
